@@ -1,0 +1,47 @@
+{
+    "geode": "5.10.1",
+    "gd": {
+        "win": "2.2081"
+    },
+    "id": "elijah.rainbow-icon",
+    "name": "Rainbow Icon",
+    "version": "v1.1.0",
+    "developer": "Elijah",
+    "description": "Cycles selected parts of your icon through RGB with optional glow.",
+    "settings": {
+        "enabled": {
+            "type": "bool",
+            "name": "Enabled",
+            "description": "Turn the rainbow effect on or off.",
+            "default": true
+        },
+        "speed": {
+            "type": "float",
+            "name": "Speed (cycles per second)",
+            "description": "How fast the hue cycles. 0.3 is roughly one full loop every 3 seconds.",
+            "default": 0.3,
+            "min": 0.01,
+            "max": 5.0,
+            "control": {
+                "slider": true
+            }
+        },
+        "target": {
+            "type": "int",
+            "name": "Affect",
+            "description": "Choose which part of the icon receives the rainbow effect.",
+            "default": 1,
+            "min": 0,
+            "max": 4,
+            "control": {
+                "slider": true
+            }
+        },
+        "palette-sync": {
+            "type": "bool",
+            "name": "Sync nearest palette color (Globed, experimental)",
+            "description": "Also sets your real saved Color 2 + glow to the closest palette color. Your original color is restored when you turn this off.",
+            "default": false
+        }
+    }
+}
